@@ -1,0 +1,86 @@
+/* general */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Pangolin&family=Patrick+Hand+SC&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: aquamarine;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 32px;
+    border-radius: 2rem;
+    height: 400px;
+    box-shadow: 20px 20px 10px  #5ccabb;
+
+}
+.form-box{
+     width: 350px; 
+    margin: 0px 10px;
+}
+.form-box header{
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(209, 226, 241) ;
+    margin-bottom: 10px;
+}
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    
+}
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 2rem;
+    outline: none;
+    
+
+}
+.container-text {
+    
+    width: 450px;
+    margin: 0 10px;
+    font-size: xx-large;
+    padding: 32px;
+    margin-top: -15rem;
+}
+#sub-text{
+    font-size: 24px;
+    font-style: italic;
+   
+}
+.btn{
+    height: 35px;
+    border-radius: 5rem;
+    background: #030a0a;
+    border: 0;
+    border-radius: 5rem;
+    font-size: 15px;
+    color: aliceblue;
+    transition: all 300ms ease;
+}
+.btn:hover{
+    background: rgb(30, 158, 158);
+    color: #030a0a;
+    cursor: pointer;
+}
