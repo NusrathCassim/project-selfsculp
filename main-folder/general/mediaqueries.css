@@ -1,0 +1,24 @@
+@media screen and (max-width: 1400px) {
+    .container{
+        display: flex;
+        
+       
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 135vh;
+    }
+
+    .container-text{
+        text-align: center;
+    }
+    
+}
