@@ -11,10 +11,11 @@
 
 @media screen and (max-width: 600px){
     .container{
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-height: 135vh;
+        min-height: 130vh;
     }
 
     .container-text{
