@@ -7,7 +7,19 @@
     
 }
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 800px) {
+    .container{
+
+    }
+    .container-text{
+        /* width: 300px;  */
+        margin-left: 0px;
+    }
+    .form-box{
+        
+        margin-right: 15px;
+    }
+}
 
 @media screen and (max-width: 600px){
     .container{
@@ -21,5 +33,6 @@
     .container-text{
         text-align: center;
     }
+    
     
 }

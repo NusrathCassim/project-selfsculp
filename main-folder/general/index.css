@@ -64,6 +64,8 @@ body {
     padding: 0 10px;
     border-radius: 2rem;
     outline: none;
+    border-style: solid;
+    border-color: darkseagreen;
     
 
 }
