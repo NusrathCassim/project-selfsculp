@@ -30,7 +30,6 @@
     height: 60px;
     width: 100%;
     display: flex;
-
     align-items: center;
     
 }
@@ -189,6 +188,7 @@
 } 
 .home-section .home-content .bx-menu{
     margin: 0 15px;
+    cursor: pointer;
 }
 .home-section .home-content .text{
     font-size: 26px;
