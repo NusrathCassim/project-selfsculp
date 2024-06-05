@@ -1,3 +1,29 @@
+<?php
+    if(isset($_POST["submit"])){
+        include("connection.php");
+        $username = mysqli_real_escape_string($conn, $_POST["username"]);
+        $password = mysqli_real_escape_string($conn, $_POST["password"]);
+
+        $sql = "select * from users where username = '$username'";
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+        if($row){
+            if(password_verify($password, $row["Password"])){
+                header("Location: home.php");
+            }
+        }
+        else{
+            echo "<script>
+                    alert('User already exists');
+                    window.location.href = 'index.php';
+                </script>";
+        }
+        
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +41,7 @@
         </div>
         <div class="box form-box">
             <header>Login</header>
-            <form action="" method="post">
+            <form action="index.php" method="post">
                 <div class="field input">
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username" required>
@@ -29,7 +55,7 @@
                     <input type="submit" class= "btn " name="submit" value="Login" required>
                 </div>
                 <div class="link" style="color: aliceblue;">
-                    Don't have account <a href="signup.html">Sign-up Now</a>
+                    Don't have account <a href="signup.php">Sign-up Now</a>
                 </div>
             </form>
             
