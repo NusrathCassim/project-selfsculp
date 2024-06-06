@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="template.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 </head>
@@ -16,10 +16,10 @@
         </div>
         
             <ul class="nav-links">
-                <li><a href="../Roadmap/roadmap.php">
+                <li><a href="../notes/notes.php">
                         <i class='bx bx-sitemap'></i>
                         <span class="link_name">
-                            RoadMaps
+                            Notes
                         </span>
                 </a></li>
                 <li><a href="../todo/todo.php">
