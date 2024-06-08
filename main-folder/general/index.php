@@ -1,4 +1,8 @@
 <?php
+    session_start();
+
+
+
     if(isset($_POST["submit"])){
         include("connection.php");
         $username = mysqli_real_escape_string($conn, $_POST["username"]);
@@ -10,6 +14,8 @@
 
         if($row){
             if(password_verify($password, $row["Password"])){
+                $_SESSION["username"] = $username;
+                $_SESSION["user_id"] = $row["Id"]; // Store user_id in session
                 header("Location: home.php");
             }
         }
