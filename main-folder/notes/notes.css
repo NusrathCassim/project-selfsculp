@@ -1,0 +1,236 @@
+/* google Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+.next-content {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.next-content.active {
+    display: flex;
+    
+}
+
+.box.form-box {
+    
+    background-color: rgb(44, 44, 44, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    color: white;
+}
+
+.box.form-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box.form-box .field {
+    margin-bottom: 15px;
+}
+
+.box.form-box label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.box.form-box input[type="text"],
+.box.form-box input[type="number"],
+.box.form-box input[type="date"],
+.box.form-box input[type="file"],
+.box.form-box textarea {
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.box.form-box input[type="file"] {
+    padding: 0px;
+    background-color: white;
+}
+
+.box.form-box .field-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box.form-box .btn1 {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+}
+
+.box.form-box .btn1:hover {
+    background-color: #e0e0e0;
+}
+
+.box.form-box textarea {
+    resize: none;
+}
+
+/* button styles */
+
+/* Style the container */
+.btn_container {
+    text-align:left; 
+    margin-left: 3rem;
+    margin-top: 1rem; 
+   
+  }
+  
+  /* Style the button */
+  .btn_add {
+    background-color: #2b87a3;/* green background */
+    color: #ffffff; /* white text */
+    border: none; /* remove default border */
+    padding: 10px 20px; /* add some padding */
+    font-size: 16px; /* increase font size */
+    cursor: pointer; /* change cursor to pointer on hover */
+  }
+  
+  /* Remove highlighting from the anchor tag */
+  .btn_add a {
+    color: inherit; /* inherit text color from parent */
+    text-decoration: none; /* remove underline */
+  }
+  
+  /* Add hover effect to the button */
+  .btn_add:hover {
+    background-color: #1d5f74; /* darker green on hover */
+  }
+  .button_cancel {
+    display: flex;
+    justify-content: end;
+    
+
+  }
+  .cancel_icon {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+  
+/* card styles */
+
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.5rem;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+.card {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    overflow-y: scroll;
+    margin: 0.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.2s;
+    position: relative;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+    position: relative;
+}
+
+.scrollable-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: #333333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 1rem;
+}
+
+.card-link {
+    font-size: 0.875rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.card-buttons {
+    position: sticky;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    background: #ffffff;
+    padding: 0.5rem 0;
+    border-top: 1px solid #dee2e6;
+}
+
+.btn {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* button */
+.btn{
+    padding: 0.2rem;
+    width: 80px;
+    /* border-color:#19665c; */
+    background-color: #333333;
+    border-radius: 0.5rem;
+    margin-right: 2px;
+    
+}
+.btn .card-link{
+    color: #ffffff;
+}
