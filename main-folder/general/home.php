@@ -1,3 +1,7 @@
+<?php
+session_start()
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +19,11 @@
     <section class="home-section">
         <div class="home-content">
             <i class="bx bx-menu"></i>
-            <span class="text">Welcome</span>
+            <span class="text">Welcome  <?php echo $_SESSION["username"];?>  </span>
+           
+            
         </div>
+       
     </section>
 
 </body>
