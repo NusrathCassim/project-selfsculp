@@ -38,10 +38,14 @@
 </head>
 <body>
     <div class="container">
+        <!-- <div class="image">
+            <img src="logo.png" alt="image">
+        </div> -->
         <div class="container-text">
             <h1 style="font-family: Delicious Handrawn;"> SelfSculp</h1>
             <p id="sub-text">make your life better!</p>
         </div>
+       
         <div class="box form-box">
             <header>Login</header>
             <form action="index.php" method="post">

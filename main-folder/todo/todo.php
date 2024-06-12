@@ -17,6 +17,11 @@
         <div class="home-content">
             <i class="bx bx-menu"></i>
             <span class="text">To-do</span>
+
+
+        </div>
+        <div class="next">
+            
         </div>
     </section>
 </body>
