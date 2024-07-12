@@ -1,0 +1,105 @@
+.calender{
+    background-color: #111111;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #222222;
+    overflow: hidden;
+    width: 300px;
+    color: white;
+    padding: 20px;
+}
+.next {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    /* margin: 20px; */
+    align-items: end;
+    gap: 2rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.btn {
+    cursor: pointer;
+}
+#month-year {
+    font-weight: bold;
+    font-size: 20px;
+}
+.weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+.days {
+    height: 240px;
+}
+.weekdays div, .days div {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.days div {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.days div:hover {
+    background-color: white;
+    color: orangered;
+}
+.days .today {
+    background-color: orangered;
+    color: white;
+}
+.days .fade {
+    color: #555;
+}
+/* modal container css */
+.modal-container{
+    width: 300px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px;
+    
+}
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.modal-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: initial;
+    margin: 0px 0px 10px 0px;
+
+}
+input{
+    padding : 5px;
+    border-radius: 5px;
+}
+.modal-footer .btn{
+    padding: 0.2rem;
+    width: 100px;
+    border-color:#000000;
+    background-color: #000000;
+    border-radius: 0.5rem;
+    margin-right: 2px;
+    color: white;
+}
