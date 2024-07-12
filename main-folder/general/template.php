@@ -11,8 +11,10 @@
 <body>
     <div class="sidebar">
         <div class="logo-Details">
-            <i class='bx bx-cube'></i>
+            <a href="../general/home.php">
+            <i class='bx bx-cube'></i></a>
             <span class="logo_name" style="font-family: Delicious Handrawn">SelfSculp</span>
+            
         </div>
         
             <ul class="nav-links">
